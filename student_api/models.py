@@ -5,6 +5,7 @@ class Student(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
     number = models.IntegerField()
+    register_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.first_name
